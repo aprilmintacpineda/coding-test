@@ -21,7 +21,10 @@ async function main () {
           totalNumTransactions++;
           break;
         case 'GET':
-          logOutput(currentBlock[command.name] || 'NULL');
+          if (command.name in currentBlock)
+            logOutput(currentBlock[command.name]);
+          else logOutput('NULL');
+
           break;
         case 'UNSET':
           delete currentBlock[command.name];
