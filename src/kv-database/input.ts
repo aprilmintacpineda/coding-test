@@ -16,10 +16,24 @@ function setCommand (args: string[]): SetCommand {
     );
   }
 
+  const value = Number(args[1]);
+
+  if (isNaN(value)) {
+    throw new Error(
+      [
+        '',
+        'INVALID INPUT',
+        'SET command accepts only numbers as value',
+        'Example: `SET A 10` to set A to the value of 10.',
+        ''
+      ].join('\n')
+    );
+  }
+
   return {
     type: 'SET',
     name: args[0],
-    value: Number(args[1])
+    value
   };
 }
 
