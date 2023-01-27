@@ -1,5 +1,7 @@
 ## In-Memory Key-Value Database
 
+Watch on YouTube https://www.youtube.com/watch?v=LY3jD2pSBA0&ab_channel=AprilMintacPineda
+
 ### Overview
 
 You are to build a data structure for storing integers. You will not persist the database to disk, you will store the data in memory.
