@@ -10,3 +10,7 @@ This repository contains all the coding tests that I have completed.
 ### Running the kv-database exam
 
 Simply run `yarn kv-db`.
+
+### Running the can-singer-sing-song exam
+
+Simply run `yarn can-singer-sing-song`.

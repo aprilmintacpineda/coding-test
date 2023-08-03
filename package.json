@@ -13,7 +13,8 @@
     "prettier": "prettier . --write",
     "lint": "npm run prettier && npm run eslint",
     "postinstall": "npx yarn-deduplicate yarn.lock && husky install",
-    "kv-db": "ts-node --project tsconfig.json --files src/kv-database/index.ts"
+    "kv-db": "ts-node --project tsconfig.json --files src/kv-database/index.ts",
+    "can-singer-sing-song": "ts-node --project tsconfig.json --files src/can-singer-sing-song/test.ts"
   },
   "dependencies": {
     "chalk": "4.x",
